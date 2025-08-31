@@ -1,121 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <h1>Tienda Muebles</h1>
+        <h1 class="nombre-sitio">Tienda <span>Muebles</span></h1>
     </header>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="tienda.html">Tienda</a>
-        <a href="blog.html">Blog</a>
-        <a href="galeria.html">Galería</a>
-        <a href="contactos.html">Contactos</a>
-    </nav>
-    <section>
-        <h2>Categorías de productos</h2>
-        <div>
-            <img src="img/categoria1.jpg" alt="imagen-categoría">
-            <a href="#">Oficina</a>
-        </div>
-        <div>
-            <img src="img/categoria2.jpg" alt="imagen-categoría">
-            <a href="#">Hogar</a>
-        </div>
-        <div>
-            <img src="img/categoria3.jpg" alt="imagen-categoría">
-            <a href="#">Cocina</a>
+    <div class="contenedor-navegacion">
+
+        <nav class="nav-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contactos.html">Contactos</a>
+        </nav>
+    </div>
+    <div class="hero"></div>
+    <section class="contenedor categorias">
+        <h2 class="text-center">Categorías de productos</h2>
+        <div class="listado-categorias">
+            <div class="categoria">
+                <img src="img/categoria1.jpg" alt="imagen-categoría">
+                <a href="#">Oficina</a>
+            </div>
+            <div class="categoria">
+                <img src="img/categoria2.jpg" alt="imagen-categoría">
+                <a href="#">Hogar</a>
+            </div>
+            <div class="categoria">
+                <img src="img/categoria3.jpg" alt="imagen-categoría">
+                <a href="#">Cocina</a>
+            </div>
         </div>
 
     </section>
-    <section>
-        <div>
-            <h2>Sobre Nosotros</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vitae sit quos possimus ratione
-                voluptas laboriosam corrupti optio, ad, consectetur commodi cupiditate quaerat! Aspernatur facilis
-                expedita quis voluptatem, omnis repudiandae?</p>
+    <section class="sobre-nosotros">
+        <div class="contenedor sobre-nosotros-display">
+            <div class="texto-nosotros">
+                <h2>Sobre Nosotros</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vitae sit quos possimus ratione
+                    voluptas laboriosam corrupti optio, ad, consectetur commodi cupiditate quaerat! Aspernatur facilis
+                    expedita quis voluptatem, omnis repudiandae?</p>
+            </div>
         </div>
     </section>
-    <main>
-        <h2>Nuestros productos</h2>
-        <div>
-            <div>
+
+    <main class="contenedor contenido-principal">
+        <h2 class="text-center">Nuestros productos</h2>
+        <div class="listado-productos">
+            <div class="producto">
                 <img src="img/producto1.jpg" alt="producto-1">
 
-                <div>
+                <div  class="texto-producto">
                     <h3>Producto 1</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatem optio aliquid vero.
                     </p>
-                    <p>$1,000,000.00</p>
-                    <a href="#">Agregar al carrito</a>
+                    <p class="precio">$1,000,000.00</p>
+                    <a class="btn" href="#">Agregar al carrito</a>
                 </div><!--info producto-->
             </div><!--Fin producto-->
-            <div>
+            <div class="producto">
                 <img src="img/producto2.jpg" alt="producto-1">
 
-                <div>
+                <div class="texto-producto">
                     <h3>Producto 2</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatem optio aliquid vero.
                     </p>
-                    <p>$1,000,000.00</p>
-                    <a href="#">Agregar al carrito</a>
+                    <p class="precio">$1,000,000.00</p>
+                    <a class="btn" class="btn" href="#">Agregar al carrito</a>
                 </div><!--info producto-->
             </div><!--Fin producto-->
-            <div>
+            <div class="producto">
                 <img src="img/producto3.jpg" alt="producto-1">
 
-                <div>
+                <div class="texto-producto">
                     <h3>Producto 3</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatem optio aliquid vero.
                     </p>
-                    <p>$1,000,000.00</p>
-                    <a href="#">Agregar al carrito</a>
+                    <p class="precio">$1,000,000.00</p>
+                    <a class="btn" href="#">Agregar al carrito</a>
                 </div><!--info producto-->
             </div><!--Fin producto-->
-            <div>
+            <div class="producto">
                 <img src="img/producto4.jpg" alt="producto-1">
 
-                <div>
+                <div  class="texto-producto">
                     <h3>Producto 4</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatem optio aliquid vero.
                     </p>
-                    <p>$1,000,000.00</p>
-                    <a href="#">Agregar al carrito</a>
+                    <p class="precio">$1,000,000.00</p>
+                    <a class="btn" href="#">Agregar al carrito</a>
                 </div><!--info producto-->
             </div><!--Fin producto-->
-            <div>
+            <div class="producto">
                 <img src="img/producto5.jpg" alt="producto-1">
 
-                <div>
+                <div  class="texto-producto">
                     <h3>Producto 5</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatem optio aliquid vero.
                     </p>
-                    <p>$1,000,000.00</p>
-                    <a href="#">Agregar al carrito</a>
+                    <p class="precio">$1,000,000.00</p>
+                    <a class="btn" href="#">Agregar al carrito</a>
                 </div><!--info producto-->
             </div><!--Fin producto-->
-            <div>
+            <div class="producto">
                 <img src="img/producto6.jpg" alt="producto-1">
 
-                <div>
+                <div class="texto-producto">
                     <h3>Producto 6</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatem optio aliquid vero.
                     </p>
-                    <p>$1,000,000.00</p>
-                    <a href="#">Agregar al carrito</a>
+                    <p class="precio">$1,000,000.00</p>
+                    <a class="btn" href="#">Agregar al carrito</a>
                 </div><!--info producto-->
             </div><!--Fin producto-->
 
@@ -148,7 +164,7 @@
                 <a href="#">Preguntas Frecuentes</a>
                 <a href="#">Ayuda en Línea</a>
                 <a href="#">Confianza y Seguridad</a>
-               
+
             </nav>
         </div>
         <p>Todos Los derechos reservados, TiendaMuebles</p>
