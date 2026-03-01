@@ -25,10 +25,13 @@ html {
     padding: 1rem;
     transition: background-color .3s ease-out;
     text-align: center;
+    border: none;
+    border-radius: .5rem;
 }
 
 .btn:hover {
     background-color: #769c02;
+    cursor: pointer;
 }
 
 /*Utilidades*/
@@ -275,6 +278,9 @@ img {
     grid-template-columns: 2fr 1fr;
     gap: 4rem;
 }
+.titulo-header{
+    margin-top: 0;
+}
 
 .entrada{
     border-bottom: 2px solid #e1e1e1;
@@ -324,4 +330,44 @@ img {
     height: 40rem;
     width: 40rem;
     object-fit: cover;
+}
+
+/*FORMULARIO*/
+.formulario{
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.formulario fieldset{
+    border: 1px solid black;
+    margin-bottom: 2rem;
+}
+
+.formulario legend{
+    padding: 2rem;
+    background-color: #005485;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.campo label{
+    flex-basis: 10rem;
+}   
+
+
+.campo input:not([type="radio"]), textarea
+{
+    flex:1;
+    padding: 1rem;
+    border:1px solid #e1e1e1;
 }

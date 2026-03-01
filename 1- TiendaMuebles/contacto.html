@@ -35,7 +35,7 @@
     <main class="contenedor contenido-principal">
         <h2 class="text-center">Contacto</h2>
 
-        <form action="">
+        <form action="" class="formulario">
             <fieldset>
                 <legend>Tus datos</legend>
                 <div class="campo">
@@ -63,7 +63,7 @@
 
                 <div class="campo">
                     <label for="mensaje"></label>
-                    <textarea name="mensaje" id="mensaje" rows="20"cols="20"></textarea>
+                    <textarea name="mensaje" id="mensaje" rows="20" cols="20"></textarea>
                 </div>
             </fieldset>
 
@@ -77,14 +77,35 @@
                         <option value="CO">Colombia</option>
                         <option value="AR">Argentina</option>
                         <option value="ES">España</option>
-                        <option value="CL">Chile</option> 
+                        <option value="CL">Chile</option>
                     </select>
                 </div>
             </fieldset>
 
             <fieldset>
                 <legend>Información extra</legend>
+                <div class="campo">
+                    <label for="cliente">Cliente</label>
+                    <input type="radio" name="tipo" id="cliente">
+                </div>
+                <div class="campo">
+                    <label for="proveedor">Proveedor</label>
+                    <input type="radio" name="tipo" id="proveedor">
+                </div>
+
+                <div class="campo">
+                    <label for="categoria">Categoria de interés</label>
+                    <input list="categorias" name="categorias">
+                    <datalist id="categorias">
+                        <option value="Cocina">
+                        <option value="Exterior">
+                        <option value="Recamaras">
+                        <option value="Oficinas">
+                        <option value="Televisión">
+                    </datalist>
+                </div>
             </fieldset>
+            <input type="submit" value="Enviar formulario" class="btn">
         </form>
 
 
