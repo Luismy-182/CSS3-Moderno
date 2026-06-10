@@ -188,16 +188,40 @@ img {
 /*SobreTech*/
 
 .sobre-tech {
-    background-image: linear-gradient(to bottom, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.jpg);
+
     background-position: right;
     background-repeat: repeat, no-repeat;
     background-size: 100%, 110rem;
 }
 
+.notavif.notwebp .sobre-tech {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.jpg);
+}
+
+.webp .sobre-tech {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.webp);
+}
+
+.avif .sobre-tech {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.avif);
+}
+
 @media(min-width:768px) {
     .sobre-tech {
-        background-image: linear-gradient(to left, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.jpg);
+
         background-repeat: repeat, no-repeat;
+    }
+
+    .notavif.notwebp .sobre-tech {
+        background-image: linear-gradient(to left, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.jpg);
+    }
+
+    .webp .sobre-tech {
+        background-image: linear-gradient(to left, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.webp);
+    }
+
+    .avif .sobre-tech {
+        background-image: linear-gradient(to left, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.avif);
     }
 
 }
@@ -394,21 +418,43 @@ img {
 
 .newsletter {
 
-    background-image: linear-gradient(to bottom, transparent 50%, var(--blanco)0%), url(../img/newsletter.jpg);
+
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100%, 70rem;
 
 }
 
+.notavif.notwebp .newsletter {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--blanco)0%), url(../img/newsletter.jpg);
+}
+
+.webp .newsletter {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--blanco)0%), url(../img/newsletter.webp);
+}
+
+.avif .newsletter {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--blanco)0%), url(../img/newsletter.avif);
+}
+
 @media(min-width:768px) {
 
     .newsletter {
 
-        background-image: linear-gradient(to right, transparent 50%, var(--blanco)0%), url(../img/newsletter.jpg);
+
         background-position: center, -21rem -10rem;
-        background-size: 100%, 100rem;
+        background-size: 100%,91rem;
         padding: 10rem 0;
+    }
+
+    .notavif.notwebp .newsletter {
+        background-image: linear-gradient(to right, transparent 50%, var(--blanco)0%), url(../img/newsletter.jpg);
+    }
+    .webp .newsletter{
+           background-image: linear-gradient(to right, transparent 50%, var(--blanco)0%), url(../img/newsletter.webp);
+    }
+    .avif .newsletter{
+           background-image: linear-gradient(to right, transparent 50%, var(--blanco)0%), url(../img/newsletter.avif);
     }
 }
 
@@ -453,28 +499,28 @@ img {
 }
 
 .formulario input[type="submit"] {
-     border-radius: .5rem;
-     width: 100%;
-     color: var(--blanco);
-     background-color: var(--primario);
-     padding: 2rem;
-     font-size: 2rem;
-     text-transform: uppercase;
-     font-weight: 900;
-     border: none;
-     margin-top: 2rem;
-     transition: background-color, .3s ease-in-out;
+    border-radius: .5rem;
+    width: 100%;
+    color: var(--blanco);
+    background-color: var(--primario);
+    padding: 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    border: none;
+    margin-top: 2rem;
+    transition: background-color, .3s ease-in-out;
 }
 
 
-.formulario input[type="submit"]:hover{
+.formulario input[type="submit"]:hover {
     background-color: #0d5b93;
     cursor: pointer;
-    
+
 
 }
 
-.footer p{
+.footer p {
     text-align: center;
     font-family: var(--fuenteSecundaria);
     text-transform: uppercase;
