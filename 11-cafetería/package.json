@@ -1,9 +1,15 @@
 {
+  "name": "11-cafeteria",
+  "version": "1.0.0",
+  "type": "module",
   "devDependencies": {
     "autoprefixer": "^10.5.0",
-    "gulp": "^5.0.1",
+    "gulp": "^4.0.2",
+    "gulp-avif": "^1.1.1",
+    "gulp-imagemin": "^9.2.0",
     "gulp-postcss": "^10.0.0",
     "gulp-sass": "^6.0.1",
+    "gulp-webp": "^5.1.0",
     "postcss": "^8.5.15",
     "sass": "^1.101.0"
   }
