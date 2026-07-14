@@ -371,6 +371,16 @@ h3 {
 
 .header {
   color: rgba(0, 0, 0, 0);
+  padding: 5rem 0;
+}
+.header::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0);
+  display: block;
+  width: 100%;
+}
+.header .header-inicio {
+  background-image: url(../img/header_inicio.jpg);
 }
 
 .nav {

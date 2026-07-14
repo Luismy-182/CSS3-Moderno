@@ -13,6 +13,7 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 const sass = gulpSass(dartSass); //
 
+//compilar css
 export const css = (done) => {
     src('src/scss/app.scss')
         .pipe(sass().on('error', sass.logError))
