@@ -16,3 +16,11 @@
         @content;
     }
 }
+
+
+//grids 
+@mixin grid($columns, $gap){
+    display: grid;
+    grid-template-columns:repeat( $columns,1fr);
+    gap: $gap;
+}

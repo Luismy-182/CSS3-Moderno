@@ -32,9 +32,18 @@ p {
 
 a {
     text-decoration: none;
+    color: v.$negro;
 }
 
 img {
     max-width: 100%;
     display: block;
 }
+
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
