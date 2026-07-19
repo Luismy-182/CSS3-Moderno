@@ -1,0 +1,52 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.testimonial{
+    background-color: v.$secundario;
+    margin-bottom: 2rem;
+    padding: 2rem ;
+    border-radius: 1rem;
+    color: v.$blanco;
+    &:last-of-type{
+        margin-bottom: 0;
+    }
+
+    &__header{
+         display: flex;
+         gap: 2rem;
+         align-items: center;
+         
+    }
+    &__autor{
+        color: v.$blanco;
+        font-weight: bold;
+        margin:.5rem 0;
+    
+    }
+
+    &__imagen{
+        flex-basis: 10rem;
+        border-radius:50%;
+        overflow: hidden;
+    }
+
+    &__texto{
+        font-size: 2rem;
+        line-height: 1.5;
+        margin: 2rem 0;
+        padding-left: 5rem;
+        position:relative;
+
+        &::before{
+            content: ' " ';
+            font-size:10rem;
+            position: absolute;
+            left:0;
+            top:-4rem;
+            opacity: .2;
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+    }
+
+
+}
