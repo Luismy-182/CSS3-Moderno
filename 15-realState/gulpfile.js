@@ -51,7 +51,6 @@ function dev() {
     watch( 'src/img/**/*', imagenes );
 }
 
-
 exports.css = css;
 exports.dev = dev;
 exports.imagenes = imagenes;

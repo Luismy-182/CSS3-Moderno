@@ -3,7 +3,11 @@
 
 .testimoniales-blog {
     margin-top: 5rem;
-    @include m.grid(3, 5rem);
+
+    @include m.tablet {
+        
+        @include m.grid(3, 5rem);
+    }
 
 
     &__blog {
@@ -58,10 +62,14 @@
 
 
 .entrada {
+
+    @include m.tablet {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        
+    }
     background-color: v.$blanco;
-    display: flex;
-    gap: 2rem;
-    margin-bottom: 2rem;
 
     &__imagen {
         object-fit: cover;
@@ -70,6 +78,11 @@
 
     &__enlace {
         @include m.boton(v.$primario, v.$blanco);
+        display: block;
+
+        @include m.tablet {
+            display: inline-block;
+        }
     }
 
     &__meta {
