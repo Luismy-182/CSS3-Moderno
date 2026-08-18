@@ -1,0 +1,35 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.slider{
+    position: relative;
+    overflow: hidden;
+    margin-top: 3rem;
+    &__slide{
+        height: 100%;
+        flex-shrink: 0;
+        position: relative;
+    }
+
+    &__imagen{
+        width: 100%;
+    }
+}
+
+
+.swiper-button-next, .swiper-button-prev{
+    color: v.$blanco;
+    background-color:  rgb( 0 0 0 /.4);
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+
+.swiper-pagination-bullet {
+    background-color: v.$blanco;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: v.$primario;
+}
