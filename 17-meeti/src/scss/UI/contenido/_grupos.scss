@@ -1,0 +1,38 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.grupos {
+    background-image: linear-gradient(to bottom, v.$primario 0%, v.$primario 50%, v.$secundario 50%, v.$secundario 100%);
+
+    @include m.tablet {
+        background-image: linear-gradient(to right, v.$primario 0%, v.$primario 50%, v.$secundario 50%, v.$secundario 100%);
+    }
+
+    &__grid {
+        @include m.grid(1, 2rem);
+
+        @include m.tablet {
+            @include m.grid(2, 2rem);
+        }
+    }
+
+
+
+
+}
+
+
+.grupo{
+
+    &__bloque{
+        padding: 4rem 2rem;
+        color: v.$blanco;
+    }
+    &__heading{
+        font-size: 3rem;
+    }
+    &__texto{
+        color: v.$blanco;
+        font-size: 2.4rem;
+    }
+}
